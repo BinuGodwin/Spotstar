@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    list-style: none;
+}
+body{
+    /* background: #a8dadc; */
+    background-image: url(/ActorImage/back-2.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-bar{
+    background: #0073bb;
+    width: 100%;
+    height: 50px;
+}
+span{
+    font-size: 24px;
+    padding-left: 20px;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-bar ul{
+    float: right;
+    margin-right: 20px;
+}
+.nav-bar ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav-bar ul li a{
+    color: black;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+span:hover{
+    color: white;
+}
+@media(max-width:768px){
+    .nav-bar ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #a1b4c0;
+        text-align: center;
+        padding: 0;
+        top: 50px;
+        left: -100%;
+        transition: 2s;
+
+    }
+    .nav-bar ul.slide{
+        left: 0;
+        transition: 2s;
+    }
+    .nav-bar ul li{
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .nav-bar ul li a{
+        border: none;
+        color: black;
+    }
+    .nav-bar ul li:hover{
+        background-color: #457b9d;
+
+    }
+    .nav-bar ul li a:hover{
+        border: none;
+    }
+    .nav-bar ul li:hover a{
+        color: white;
+    }
+    .hamburger{
+        float: right;
+        padding-top: 12px;
+        padding-right: 20px;
+    }
+    .hamburger .line{
+        width: 15px;
+        height: 5px;
+        background-color: black;
+        margin-top: 5px;
+        display: block;
+    }
+}
+.main-container{
+padding: 20px 30px;
+}
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container h1{
+text-align: center;
+transition: 0.4s;
+}
+.option{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.heading{
+margin-top: 20px;
+}
+.container-1 h1{
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.con1-img{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+grid-gap: 20px;
+margin-top: 20px;
+}
+.con1-img img{
+width: 100%;
+border-radius: 20px;
+overflow-x: hidden;
+transition: 0.4s;
+}
+.con1-img img:hover{
+box-shadow: 4px 4px 5px 2px rgba(0,0,0,.8);
+transform: scale(0.9);
+z-index: 1;
+}
+.container h1:hover{
+text-decoration: underline;
+transform: scale(1.05)
+}
+h4{
+    text-align: center;
+    padding-top: 5px;
+}

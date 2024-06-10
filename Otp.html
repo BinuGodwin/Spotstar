@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPOTSTAR</title>
+    <link rel="stylesheet" href="./CSS/OTP.CSS">
+</head>
+<body>
+    <div class="OTP">
+        <form action="">
+            <h1>OTP Verification</h1>
+            <div class="Input-Box">
+                <input type="text" placeholder="Enter Your OTP" id="otp">
+                <p id="error"></p>
+            </div>
+            <div class="Verify">
+                <input type="button" class="verify" value="Verify" onclick="otpVerification()">
+                <button class="Resend" onclick="resendOtp()">Resend OTP</button>
+            </div>
+        </form>
+    </div>
+    <script src="/Java Script/Otp.js"></script>
+</body>
+</html>
